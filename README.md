@@ -91,11 +91,28 @@ To login
 ```$xslt
 npm login 
 ```
-##7. Publish your components library to NPM
+##7. add github repository
+```$xslt
+git remote add origin https://github.com/tpnn88/vcenproduct.git
+git branch -M main
+git push -u origin main
+```
+
+```$xslt
+npm i
+# add repository to package.js
+...
+"repository": {
+    "type": "git",
+    "url": "git+https://github.com/tpnn88/vcenproduct.git"
+},
+```
+
+##8. Publish your components library to NPM
 ```$xslt
 npm publish --access public
 ```
-##8. Installing your package in a different project
+##9. Installing your package in a different project
 ```$xslt
 npm i your-packgage-name
 ```
@@ -110,3 +127,4 @@ usable
   <Alert/>
 </template>
 ```
+See [How To Build Package](http://parseobjects.com/publish-vue-js-components-npm/).
