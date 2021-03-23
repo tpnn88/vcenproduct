@@ -9,7 +9,8 @@
     "public/*",
     "*.json",
     "*.js",
-    "plugins/*"
+    "plugins/*",
+    "libs/*"
   ],
   "scripts": {
     "serve": "vue-cli-service serve",
@@ -18,7 +19,12 @@
     "build-bundle": "vue-cli-service build --target lib --name vcenproduct ./src/components/index.js"
   },
   "dependencies": {
+    "apollo-cache-inmemory": "^1.6.6",
+    "apollo-client": "^2.6.10",
+    "apollo-link-http": "^1.5.17",
     "core-js": "^3.6.5",
+    "graphql": "^15.5.0",
+    "graphql-tag": "^2.11.0",
     "vue": "^2.6.11"
   },
   "devDependencies": {

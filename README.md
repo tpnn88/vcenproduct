@@ -1,5 +1,19 @@
 # v-cen-product
+Usage:
+```text
+npm i @tpnn88/vcenproduct
 
+#  usage in component
+import '@tpnn88/vcenproduct/dist/vcenproduct.css'
+import components from '@tpnn88/vcenproduct'
+export default {
+    name: "Index",
+    components: { ...components }
+}
+
+# in template
+<v-cen-product :config="{uri: `http://localhost:8080/v1/graphql`}"/>
+```
 ## Project setup
 ```
 npm install
@@ -127,4 +141,6 @@ usable
   <Alert/>
 </template>
 ```
-See [How To Build Package](http://parseobjects.com/publish-vue-js-components-npm/).
+See: <br>
+[How To Build Package](http://parseobjects.com/publish-vue-js-components-npm/) <br>
+[Version Management](https://cloudfour.com/thinks/how-to-publish-an-updated-version-of-an-npm-package/).

@@ -1,7 +1,7 @@
 import Vue from 'vue';
-import Button from './Button.vue';
+import VCenProduct from './VCenProduct.vue';
 const Components = {
-    Button
+    VCenProduct
 };
 Object.keys(Components).forEach(name => {
     Vue.component(name, Components[name]);

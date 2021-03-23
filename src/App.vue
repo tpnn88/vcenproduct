@@ -1,17 +1,23 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <Button msg="Welcome to Your Vue.js App"/>
+    <VCenProduct :config="config"/>
   </div>
 </template>
 
 <script>
-import Button from './components/Button.vue'
+import VCenProduct from './components/VCenProduct.vue'
 
 export default {
   name: 'App',
   components: {
-    Button
+    VCenProduct
+  },
+  data() {
+    return {
+      config: {
+        uri: 'http://localhost:8080/v1/graphql'
+      }
+    }
   }
 }
 </script>
